@@ -1,0 +1,8 @@
+- MSc degree in Data Analytics at the University of Warwick, including modules in Data Mining, Natural Language Processing and Data Visualisation.
+- Dissertation project: Machine Learning Models for Activity Prediction of Antimicrobial Peptides; used Python, machine learning, NLP-style protein embeddings and evaluation metrics such as AUC-ROC and AUC-PR.
+- Research Assistant at the Biomedical Big Data Centre, West China School of Medicine, Sichuan University; supported a clinical machine-learning project using Python/R and presented findings to interdisciplinary audiences.
+- Software Engineer / Programming Language Engineer experience in Edinburgh; worked with TypeScript, build tooling, code generation, debugging and project delivery in a collaborative engineering environment.
+- Developed awareness of healthcare data context through biomedical ML research, including how data analysis can support clinical and healthcare stakeholders. No direct NHS policy experience claimed.
+- Communicated technical analysis clearly to supervisors and non-specialists, including biomedical and healthcare-related stakeholders.
+- Worked in a caring, considerate and respectful way with colleagues from technical, academic and interdisciplinary backgrounds; listened to feedback and adapted explanations for the audience.
+- Used open and honest wording when discussing limitations, missing evidence and project risks; aimed to be approachable when collaborating with others.

@@ -1,0 +1,9 @@
+repos:
+  - repo: https://github.com/semgrep/pre-commit
+    rev: v1.128.1
+    hooks:
+      - id: semgrep
+        args:
+          - --config
+          - .semgrep/rules.yaml
+          - --error

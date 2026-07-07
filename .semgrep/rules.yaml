@@ -1,0 +1,33 @@
+rules:
+  - id: groundedapply-hardcoded-google-api-key
+    message: Do not hardcode Google API keys. Read them from GOOGLE_API_KEY or approved secret storage.
+    severity: ERROR
+    languages:
+      - python
+      - generic
+    patterns:
+      - pattern-regex: 'AIza[0-9A-Za-z_-]{20,}'
+
+  - id: groundedapply-hardcoded-env-google-api-key
+    message: Do not commit real GOOGLE_API_KEY values.
+    severity: ERROR
+    languages:
+      - generic
+    patterns:
+      - pattern-regex: 'GOOGLE_API_KEY\s*=\s*["'']?(?!your_|<|REPLACE|example)[A-Za-z0-9_\-]{16,}'
+
+  - id: groundedapply-genai-inline-api-key
+    message: Pass Gemini credentials through environment variables, not inline string literals.
+    severity: WARNING
+    languages:
+      - python
+    patterns:
+      - pattern: genai.Client(api_key="...")
+
+  - id: groundedapply-subprocess-shell-true
+    message: Avoid shell=True in agent-facing code unless there is a reviewed, documented reason.
+    severity: WARNING
+    languages:
+      - python
+    patterns:
+      - pattern: subprocess.$FUNC(..., shell=True, ...)
